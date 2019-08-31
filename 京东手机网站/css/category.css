@@ -1,0 +1,94 @@
+body{
+    width: 100%;
+    height: 100%;
+    /*background-color: pink;*/
+    position: absolute;
+}
+
+/*下面的大的分类查询盒子*/
+.jd-category{
+    height: 100%;
+    width: 100%;
+    /*padding-top: 45px;*/
+    position: relative;
+}
+/*左边竖列的查询导航栏*/
+.jd-category .category-left{
+    width: 90px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /*padding-top: 45px;*/
+    z-index: 9;
+}
+.jd-category .category-left .category-left-box{
+    width: 90px;
+}
+.jd-category .category-left .category-left-box ul{
+    
+}
+.jd-category .category-left .category-left-box ul li{
+    height: 50px;
+    width: 90px;
+    background-color: #f3f4f6;
+    font-size: 12px;
+    font-family: Sans-Serif;
+    border-bottom: 1px solid #e0e0e0;
+    border-right: 1px solid #e0e0e0;
+}
+.jd-category .category-left .category-left-box ul li a{
+    line-height: 50px;
+    text-align: center;
+    display: block;
+}
+.jd-category .category-left .category-left-box ul li.now{
+    background-color: #fff;
+}
+.jd-category .category-left .category-left-box ul li.now a{
+    border-right:none;
+    color:#f15353;
+}
+
+/*右边的服装显示区*/
+.jd-category .category-right{
+    height: 100%;
+    width: 100%;
+    padding-left: 90px;
+}
+.jd-category .category-right .category_right_box{
+    padding: 10px 12px;
+}
+.jd-category .category-right .r_banner{
+    /*width: 100%;*/
+}
+.jd-category .category-right .r_banner a{
+    /*width: 100%;*/
+}
+.jd-category .category-right .r_product{
+    font-size:12px;
+    margin-top: 20px;
+}
+.jd-category .category-right .r_product h3{
+    color:#888;
+    margin-bottom: 10px;
+}
+.jd-category .category-right .r_product h3 ul{
+
+}
+.jd-category .category-right .r_product ul li{
+    width: 33.333%;
+    text-align: center;
+    float: left;
+}
+.jd-category .category-right .r_product ul li a{
+
+}
+.jd-category .category-right .r_product ul li a img{
+    width: 62px;
+    height: 62px;
+    margin: 0 auto;
+}
+.jd-category .category-right .r_product ul li a p{
+    line-height: 30px;
+}

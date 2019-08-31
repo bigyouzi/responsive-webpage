@@ -1,0 +1,302 @@
+body{
+    background: #e0e0e0;
+}
+.jd_navbar {
+    position:static;
+}
+/*安全提示*/
+.safetip{
+    width: 100%;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    font-size:13px;
+    border-bottom:1px solid #e0e0e0;
+    background: #fff;;
+}
+.safetip p{
+    position: relative;
+    padding-left: 25px;
+    width: 240px;
+    display: inline-block;
+}
+.safetip p::before{
+    content:"";
+    position: absolute;
+    background: url(../images/safe_icon.png);
+    width: 18px;
+    height: 18px;
+    left: 0;
+    top: 8px;
+    background-size: 18px 18px;
+}
+/*公共复选框*/
+ .check-box{
+    width: 20px;
+    height: 20px;
+    display: block;
+    background: url(../images/shop-icon.png) no-repeat;
+    background-size:50px 100px;
+    background-position: 0 0;
+}
+.jd-shop .jd-title .title-check[checked]{
+    background-position: -25px 0;
+}
+/*商品展览部分*/
+.jd-shop{
+    margin-top: 10px;
+    background: #fff;
+    position: relative;
+}
+/*店铺名称部分*/
+.jd-shop .jd-title{
+    height: 36px;
+    border-bottom: 1px solid red;
+    border-top:1px solid red;
+}
+.jd-shop .jd-title .title-check{
+    width: 40px;
+    height: 35px;
+    position: absolute;
+}
+.jd-shop .jd-title .title-check .check-box{
+    position: absolute;
+    top: 7px;
+    left: 10px;
+}
+.jd-shop .jd-title .title-name{
+    padding-left: 40px;
+    font-size:12px;
+}
+.jd-shop .jd-title .title-name .imgLogo{
+    width: 15px;
+    height: 13px;
+    display: block;
+    float: left;
+    margin-top: 10px;
+}
+.jd-shop .jd-title .title-name .name{
+    float: left;
+    font-size: 13px;
+    margin-top: 8px;
+    margin-left: 4px;
+}
+.jd-shop .jd-title .title-name .tip{
+    float: right;
+    color:#d8505c;
+    margin-right: 10px;
+    margin-top: 8px;
+}
+
+/*产品图片部分*/
+.jd-shop .jd-product{
+    /*border-bottom: 1px solid red;*/
+    position: relative;
+}
+.jd-shop .jd-product .content-check{
+    width: 40px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.jd-shop .jd-product .content-check .check-box{
+    position: absolute;
+    top: 20px;
+    left: 10px;
+}
+.jd-shop .jd-product .content-product{
+    float: left;
+    padding:10px 10px 10px 40px;
+    background-color: #fff;
+
+}
+.jd-shop .jd-product .content-product .content-img{
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+    display: block;
+    position: absolute;
+}
+.jd-shop .jd-product .content-product .content-img img{
+    width: 100%;
+    height: 100%;
+}
+.jd-shop .jd-product .content-product .product-box{
+    padding-left: 90px;
+}
+.jd-shop .jd-product .content-product .product-box .name{
+    width: 100%;
+    height: 30px;
+    line-height: 15px;
+    font-size:13px;
+    overflow: hidden;
+    display: block;
+}
+.jd-shop .jd-product .content-product .product-box .price{
+    margin-top: 5px;
+}
+.jd-shop .jd-product .content-product .product-box .option{
+
+}
+.jd-shop .jd-product .content-product .product-box .option .change-box{
+    float: left;
+    margin-top: 5px;
+}
+.jd-shop .jd-product .content-product .product-box .option .change-box .change-less{
+    width: 30px;
+    height: 20px;
+    display: block;
+    text-align: center;
+    border:1px solid red;
+    float: left;
+}
+.jd-shop .jd-product .content-product .product-box .option .change-box input{
+    width: 30px;
+    height: 20px;
+    display: block;
+    border-top:1px solid red;
+    border-bottom:1px solid red;
+    float: left;
+}
+.jd-shop .jd-product .content-product .product-box .option .change-box .change-more{
+    width: 30px;
+    height: 20px;
+    display: block;
+    text-align: center;
+    border:1px solid red;
+    float: left;
+}
+.jd-shop .jd-product .content-product .product-box .option .delete-box{
+    float: right;
+}
+.jd-shop .jd-product .content-product .product-box .option .delete-box .delete-top{
+    width: 18px;
+    height: 4px;
+    background: url(../images/delete_up.png) no-repeat;
+    background-size: 18px 4px;
+}
+.jd-shop .jd-product .content-product .product-box .option .delete-box .delete-bottom{
+    width: 18px;
+    height: 17px;
+    background: url(../images/delete_down.png) no-repeat;
+    background-size:18px 17px;
+}
+/*底部结算部分*/
+.jd-js{
+    width: 100%;
+    height: 62px;
+    background-color: rgba(0,0,0,0.8);
+    position: fixed;
+    bottom: 0;
+}
+.jd-js .js-check{
+    width: 80px;
+    height: 35px;
+    /*background-color: red;*/
+    position: absolute;
+    line-height: 62px;
+}
+.jd-js .js-check .check-box{
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    /*background-color: orange;*/
+    width: 20px;
+    height: 20px;
+    color:#000;
+}
+.jd-js .js-check [checked]{
+    background-position: -25px 0;
+}
+.jd-js .js-check span{
+    padding-left: 35px;
+    color:#fff;
+}
+.jd-js .js-money{
+    padding-left: 70px;
+    padding-right: 80px;
+    height: 62px;
+    color:#fff;
+}
+.jd-js .js-money p.sum{
+    font-size:16px;
+    margin-top: 15px;
+}
+.jd-js .js-money p.fan{
+    font-size:10px;
+    margin-top: 5px;
+}
+.jd-js a.js-submit{
+    display: block;
+    width: 120px;
+    height: 62px;
+    padding:0 2px;
+    text-align: center;
+    line-height: 62px;
+    color:#fff;
+    background: #d8505c;
+    position: absolute;
+    right: 0;
+    top: 0;
+
+}
+.jd-js a.js-submit span{
+    font-size:12px;
+}
+
+/*确认删除窗口*/
+.jd-judge{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.4);
+    z-index: 1001;
+}
+.jd-judge .judge-box{
+    width: 85%;
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    margin: 0  auto;
+    padding:0 5%;
+
+}
+.jd-judge .judge-box .judge-box-text{
+    line-height: 75px;
+    color: #666;
+    text-align: center;
+    font-size: 16px;
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 10px;
+}
+.jd-judge .judge-box .judge-box-btn{
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.jd-judge .judge-box .judge-box-btn .judge-sure{
+    width: 45%;
+    height:36px;
+    float: left;
+    margin-right: 10%;
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    color: #888;
+    text-align: center;
+    line-height: 36px;
+}
+.jd-judge .judge-box .judge-box-btn .judge-cancel{
+    width: 45%;
+    height:36px;
+    float: left;
+    background: #d8505c;
+    border-radius: 4px;
+    color: #fff;
+    text-align: center;
+    line-height: 36px;
+}
+
+
+

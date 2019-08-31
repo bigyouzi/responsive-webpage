@@ -1,0 +1,96 @@
+*,
+::before,
+::after{
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-box-sizing: border-box;
+}
+body{
+    font-size:14px;
+    font-family:"Microsoft YaHei","Sans-Serif";
+    color:#000;
+}
+a {
+    text-decoration: none;
+}
+ul{
+    list-style:none;
+}
+ input,textarea{
+     border:none;
+     resize:none;
+     outline:none;
+     -webkit-appearance: none;
+ }
+ .clearfix::before,
+ .clearfix::after{
+     content:" ";
+     display:block;
+     height:0;
+     line-height:0;
+     visibility: hidden;
+     clear:both;
+ }
+ [class^="icon-"]{
+     background: url(../images/sprites.png) no-repeat;
+     background-size:200px 200px;
+ }
+
+
+/*分类搜索导航条*/
+.jd_navbar{
+    width: 100%;
+    height: 45px;
+    background: url(../images/header-bg.png) repeat-x;
+    background-size: 1px 44px;
+    border-bottom: 1px solid #e0e0e0;
+    position: relative;
+    /*position: absolute;*/
+    /*padding-top: 45px;*/
+    z-index: 10;
+}
+/*左箭头返回按钮*/
+.jd_navbar .icon-back{
+    width: 20px;
+    height: 20px;
+    background-position: -20px 0;
+    display: block;
+    margin:10px 12px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/*中间的搜索框*/
+.jd_navbar form{
+    width: 100%;
+    height: 44px;
+    padding: 0 40px;
+}
+.jd_navbar form input{
+    width: 100%;
+    height: 32px;
+    border: 1px solid #bfbfbf;
+    border-radius: 4px;
+    margin-top: 6px;
+}
+
+.jd_navbar h2{
+    text-align: center;
+    font-size: 16px;
+    line-height: 44px;
+    font-weight: inherit;
+}
+/*右边的菜单栏按钮*/
+.jd_navbar .icon-menu{
+    width: 40px;
+    height: 40px;
+    background-position: -60px 0;
+    display: block;
+    background-clip: content-box;
+    background-origin: content-box;
+    padding:10px 12px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
